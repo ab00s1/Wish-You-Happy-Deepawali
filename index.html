@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Diwali to You !</title>
+    <link
+      rel="shortcut icon"
+      href="assets/favicon-icon-27.jpg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: linear-gradient(
+          45deg,
+          rgba(255, 0, 247, 0.5),
+          rgba(255, 200, 0, 0.5)
+        );
+        font-size: larger;
+      }
+      form {
+        width: 50%;
+        margin-inline: auto;
+        margin-block: 26vh;
+      }
+      fieldset {
+        background: transparent;
+        border: 10px solid #ccc;
+        border-radius: 8px;
+        padding: 16px;
+      }
+      input {
+        width: 80%;
+        border: 0;
+        outline: 0;
+        color: blue;
+        background-color: gainsboro;
+        font-family: Merriweather Sans, cursive;
+        padding: 10px;
+        border-radius: 14px;
+      }
+      p input {
+        cursor: pointer;
+        width: 55%;
+        background-color: #2f2f2f;
+        color: white;
+      }
+      @media (max-width: 1100px) {
+        body {
+          font-size: large;
+        }
+        form {
+          margin-block: 20vh;
+        }
+      }
+      @media (max-width: 854px) {
+        body {
+          font-size: medium;
+        }
+        form {
+          margin-block: 34vh;
+          width: 80%;
+        }
+      }
+    </style>
+
+    <script src="idxScript.js" defer></script>
+  </head>
+  <body>
+    <form id="myForm">
+      <fieldset>
+        <legend><h1>Wishing You Happy Diwali !</h1></legend>
+        <label for="toName">
+          <p>Enter Your Name :</p>
+          <input type="text" id="toName" />
+        </label>
+        <label for="fromName">
+          <p>Enter Name of The Person who Send you this Message :</p>
+          <input type="text" id="fromName" />
+        </label>
+        <a href=""
+          ><p><input type="button" value="Submit" /></p
+        ></a>
+      </fieldset>
+    </form>
+  </body>
+</html>

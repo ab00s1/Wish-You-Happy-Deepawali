@@ -1,0 +1,303 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Merriweather Sans, cursive;
+  font-size: xx-large;
+}
+
+.chakra-1 img {
+  margin: 24px 0;
+  width: 40vw;
+  position: relative;
+  left: -50%;
+  animation: rotation 8s linear infinite;
+}
+.side-images img {
+  height: 68vh;
+}
+.bottom-images img {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  width: 35vw;
+}
+
+.crackers-display {
+  position: fixed;
+  z-index: 1;
+}
+
+#hero-section .content {
+  margin-left: -12%;
+}
+
+#hero-section .content .buttons #btnCr {
+  cursor: pointer;
+  color: #000;
+  background: #fff;
+  font-family: Merriweather Sans, cursive;
+  font-size: large;
+  padding: 16px 16px;
+  border: 0;
+  border-radius: 32px;
+  position: relative;
+  z-index: 1;
+}
+#hero-section .content .buttons #btnBl {
+  cursor: pointer;
+  color: #fff;
+  background: transparent;
+  font-family: Merriweather Sans, cursive;
+  font-size: large;
+  padding: 16px 16px;
+  border: 2px solid #fff;
+  border-radius: 32px;
+}
+
+#hero-section .content .buttons a {
+  scroll-behavior: smooth;
+  position: relative;
+  z-index: 1;
+}
+
+#hero-section h1 img {
+  width: 10vw;
+}
+#hero-section h1 .diya-gif {
+  position: relative;
+  left: 5%;
+  bottom: 10px;
+}
+#hero-section h1 .diya-gif img {
+  width: 50px;
+  position: absolute;
+}
+
+#hero-section h1 {
+  color: #fff;
+  text-decoration: underline;
+  font-family: Playfair Display, cursive;
+}
+
+#hero-section .flex-container {
+  display: flex;
+}
+
+#hero-section {
+  position: relative;
+  background: linear-gradient(90deg, #ce6252, #9e2e75);
+  padding-block: 8vh;
+}
+
+#blessings-section {
+  background-color: #f2ddb4;
+  overflow: hidden;
+}
+
+#blessings-section .flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.chakra-2 img {
+  margin: 24px 0;
+  width: 40vw;
+  position: relative;
+  right: -45%;
+  animation: rotation 8s linear infinite;
+}
+.blessing-img img {
+  position: relative;
+  right: -64px;
+}
+
+#thankyou-section {
+  overflow: hidden;
+}
+
+#thankyou-section .flex-container {
+  display: flex;
+}
+
+.chakra-3 img {
+  margin: 24px 0;
+  width: 40vw;
+  position: relative;
+  left: -50%;
+  animation: rotation 8s linear infinite;
+}
+.thankyou-sub {
+  background: linear-gradient(135deg, #f9b46e, #ee7682);
+  width: 60%;
+  padding: 10vh 0;
+}
+.chakra-3 {
+  background: linear-gradient(135deg, #fee25f, #ffb686);
+  width: 40%;
+  padding: 10vh 0;
+}
+
+.thankyou-sub .msg-content {
+  position: relative;
+  height: 75%;
+  width: 65%;
+  border-radius: 20px;
+  top: 8vh;
+  left: -8vw;
+  padding: 32px 16px;
+  font-size: large;
+  background: linear-gradient(45deg, #870551, #481e6c);
+}
+.msg-content .rocket {
+  position: absolute;
+  left: -5vw;
+  top: -5vh;
+}
+.msg-content .rocket img {
+  width: 8vw;
+}
+.msg-content .crackers {
+  position: absolute;
+  right: 0px;
+  bottom: -5vh;
+}
+.msg-content .crackers img {
+  width: 20vw;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  font-size: small;
+  bottom: 0;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1100px) {
+  .blessing-img img {
+    width: 60vw;
+  }
+
+  .thankyou-sub .msg-content {
+    font-size: medium;
+    padding: 50px 16px;
+  }
+
+  .msg-content .crackers {
+    bottom: -3vh;
+  }
+
+  .msg-content .rocket {
+    left: -3vw;
+    top: -3vh;
+  }
+}
+
+@media (max-width: 854px) {
+  body {
+    font-size: x-large;
+  }
+
+  #hero-section .flex-container {
+    flex-direction: column;
+  }
+
+  #hero-section .content {
+    margin-left: 0;
+    padding-inline: 32px;
+  }
+
+  .chakra-1 img {
+    left: 20%;
+    margin-top: -36%;
+    width: 55vw;
+  }
+
+  #hero-section .content .buttons {
+    width: 42vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-images img {
+    height: 40vh;
+  }
+  .bottom-images img {
+    left: 10%;
+    width: 85vw;
+    bottom: 32px;
+  }
+
+  #blessings-section {
+    padding-bottom: 10vh;
+  }
+
+  #blessings-section .flex-container {
+    flex-direction: column-reverse;
+  }
+
+  .chakra-2 img {
+    right: 0;
+    width: 60vw;
+    margin-top: -48%;
+  }
+  .blessing-img img {
+    right: 0;
+    width: 75vw;
+  }
+
+  #thankyou-section .flex-container {
+    flex-direction: column;
+    background: linear-gradient(90deg, #f6bc64, #f98067);
+    padding: 32px 0;
+  }
+
+  .thankyou-sub {
+    background: transparent;
+    width: 100%;
+  }
+  .chakra-3 {
+    background: transparent;
+    width: 100%;
+  }
+  .chakra-3 img {
+    left: 16%;
+    margin-top: -34vh;
+    width: 65vw;
+  }
+  .thankyou-sub .msg-content {
+    left: 14%;
+    margin-top: -20vh;
+    width: 70%;
+  }
+  .msg-content .crackers {
+    bottom: -5vh;
+  }
+
+  .msg-content .rocket {
+    left: -5vw;
+    top: -5vh;
+  }
+  .msg-content .rocket img {
+    width: 16vw;
+  }
+  .msg-content .crackers img {
+    width: 40vw;
+  }
+}
